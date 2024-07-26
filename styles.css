@@ -48,6 +48,7 @@ nav ul li a:hover {
 .container {
     text-align: center;
     margin-top: 50px;
+    width: 80%;
 }
 
 .animated-title {
@@ -61,10 +62,35 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
-    width: 80%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 600px;
     margin: 20px auto;
     animation: scaleUp 1s ease-in-out;
+    text-align: left;
+}
+
+.product-description h2, .product h2 {
+    text-align: center;
+}
+
+.product-description ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.product-description ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.product-description ul li::before {
+    content: "•";
+    color: #ffa500;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 .buy-button, button {
@@ -78,6 +104,8 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
     border: none;
     cursor: pointer;
+    text-align: center;
+    width: 100%;
 }
 
 .buy-button:hover, button:hover {
@@ -101,6 +129,8 @@ input, select, button {
     border: 1px solid #ffa500;
     background-color: #000;
     color: #ffa500;
+    width: 100%;
+    max-width: 400px;
 }
 
 @keyframes fadeIn {
